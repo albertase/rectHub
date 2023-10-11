@@ -1,0 +1,174 @@
+
+a.non-active {
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    border-image: linear-gradient(89.86deg, #6be1ba, #6e54ef 185.63%) 1;
+    color: #6E54EF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.section {
+    background: white;
+}
+
+.active {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+
+
+.slider-container:hover .prev,.slider-container:hover .next {
+    color: black
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.round_corner {
+    background-color: white;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0px 3px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+.slider-container .dot{
+    background-color: #D9D9D9;
+}
+.slider-container .active-dot{
+    background-image: linear-gradient(89.86deg, #6be1ba, #6e54ef 185.63%);
+    padding: 2px;
+}
+
+.play-pause {
+    color: black;
+}
+
+.slide {
+    border: double 1px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white),
+    linear-gradient(89.86deg, #6be1ba, #6e54ef 185.63%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.phoneInput {
+    padding: 21px 0;
+}
+
+.phone-input-container {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+    .phoneInput {
+        padding: 23px 0;
+    }
+
+
+}
+
+
+
+.custom-dropdown {
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    width: 200px;
+}
+
+.selected-option {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    padding: 12px 5px;
+    cursor: pointer;
+    border: 1px solid #a89494;
+}
+
+.selected-flag {
+    width: 16px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.placeholder {
+
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+}
+
+.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 16px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
